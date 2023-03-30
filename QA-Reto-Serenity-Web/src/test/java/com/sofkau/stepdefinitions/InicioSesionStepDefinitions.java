@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Assertions;
 
 import static com.sofkau.questions.MensajeNombre.mensajeNombre;
 import static com.sofkau.tasks.AbrirPaginaInicial.abrirPaginaInicial;
+import static com.sofkau.tasks.EscogerProductos.escogerProductos;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.LlenarRegistro.llenarRegistro;
 import static com.sofkau.tasks.LlenarRegistro.nombreUsuario;
@@ -22,24 +23,50 @@ public class InicioSesionStepDefinitions extends Configuracion {
     public static Logger LOGGER = Logger.getLogger(InicioSesionStepDefinitions.class);
     @Dado("que el usuario esta en la pagina de inicio")
     public void que_el_usuario_esta_en_la_pagina_de_inicio() {
-        configurarNavegador();
 
-        theActorInTheSpotlight().wasAbleTo(
-                abrirPaginaInicial()
-        );
+        configurarNavegador();
+        try {
+            theActorInTheSpotlight().wasAbleTo(
+                    abrirPaginaInicial());
+            LOGGER.info("INICIA LA AUTOMATIZACION");
+        } catch (Exception e) {
+            LOGGER.info(" fallo la configuracion inicial");
+            LOGGER.warn(e.getMessage());
+            Assertions.fail();
+        }
+
     }
 
     @Cuando("iniciar sesion")
     public void iniciar_sesion() {
-        theActorInTheSpotlight().attemptsTo(
-                iniciarSesion()
-        );
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    iniciarSesion()
+            );
+            LOGGER.info("Realiza la peticion");
+        } catch (Exception e) {
+            LOGGER.info(" fallo al momento de realizar la peticion");
+            LOGGER.warn(e.getMessage());
+            Assertions.fail();
+        }
+
     }
 
 
 
     @Cuando("escoge el producto de mayor valor")
     public void escoge_el_producto_de_mayor_valor() {
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    escogerProductos()
+            );
+            LOGGER.info("Realiza la peticion");
+        } catch (Exception e) {
+            LOGGER.info(" fallo al momento de realizar la peticion");
+            LOGGER.warn(e.getMessage());
+            Assertions.fail();
+        }
+
 
     }
 

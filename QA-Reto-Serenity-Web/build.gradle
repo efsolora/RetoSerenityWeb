@@ -31,6 +31,7 @@ ext {
 }
 dependencies {
     implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitVersion
+    implementation 'org.webjars.npm:github-com-mcku-UI-Dropdown-:2.7.7'
     runtimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitVersion
     implementation group: 'net.serenity-bdd', name: 'serenity-core', version: serenityVersion
     implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: serenityVersion

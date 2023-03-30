@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,10 +25,10 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 public class Configuracion {
     private static final String SWITCHES = "--remote-allow-origins=*";
     private static final String ACTOR = "Efrain";
-    private static final int DIEZ_SEGUNDOS = 10;
+    private static final int DIEZ_SEGUNDOS = 20;
 
     @Managed()
-    protected WebDriver webDriver;
+    public WebDriver webDriver;
 
 
     private void setupUser( WebDriver webDriver) {
@@ -65,17 +66,4 @@ public class Configuracion {
         WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
         wait.until(ExpectedConditions.alertIsPresent());
     }
-
-    public void cambiarPestana(){
-        webDriver.switchTo().defaultContent();
-        ArrayList<String> tabs2 = new ArrayList<String> (webDriver.getWindowHandles());
-        webDriver.switchTo().window(tabs2.get(1));
-    }
-    protected void refrescar(){
-        webDriver.navigate().refresh();
-    }
-
-
-
-
 }

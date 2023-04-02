@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 16:44</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-04-2023 22:19</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para poder comprar productos
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Compra exitosa
+                                <span class="failing-color">Compra exitosa
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -222,7 +222,7 @@ para poder comprar productos
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                    <span class="error-message error-message-title">Assertion error: Expected enabled element was not clickable</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -238,11 +238,11 @@ para poder comprar productos
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                    <h4>java.lang.AssertionError </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.sofkau.tasks.EscogerProductos.performAs(EscogerProductos.java:18)<br />com.sofkau.stepdefinitions.InicioSesionStepDefinitions.escoge_el_producto_de_mayor_valor(InicioSesionStepDefinitions.java:60)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>com.sofkau.tasks.HacerPago.performAs(HacerPago.java:19)<br />com.sofkau.stepdefinitions.InicioSesionStepDefinitions.se_ve_un_mensaje_finaizar_compra(InicioSesionStepDefinitions.java:77)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
                 </div>
@@ -252,7 +252,7 @@ para poder comprar productos
 
 
                 <div class="panel-body">
-                    <a href="pagesource17151247082682258839.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
@@ -260,37 +260,64 @@ para poder comprar productos
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Efrain abrir pagina inicial" width="1366"/>
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Efrain opens the Pagina inicial" width="1366"/>
-                <img src="c705f535c108f49c52c392055fb2458d1fa8b2522eb30be99a56303bd9785ab6.png" title=" Efrain opens the Pagina inicial (completed)" width="1366"/>
-                <img src="545f0c2256d7b0217168ccd5e279bc824587ae71d0d19abb72e984ee847090a8.png" title=" Efrain abrir pagina inicial (completed)" width="1366"/>
-                <img src="5808db20bb1557a30c35a129d64ab6888cf3913d2d8fa0583f7528efba1fad9a.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
-                <img src="fbbca75f0921b01aef47d95323b5a45ac9bd4ada71e7e78d7834e0279680534a.png" title=" Cuando iniciar sesion" width="1366"/>
-                <img src="f0c37380bd6429da843c06226fcdf2a1fe52284365f42c913f3ac16789f3f955.png" title=" Efrain iniciar sesion" width="1366"/>
-                <img src="f0c37380bd6429da843c06226fcdf2a1fe52284365f42c913f3ac16789f3f955.png" title=" Efrain clicks on BOTON PERFIL" width="1366"/>
-                <img src="37d3a95b0b37a8ec54684db2b5980285e5edd413ce9af9eaa85b5b1bf0cbd8c0.png" title=" Efrain clicks on BOTON PERFIL (completed)" width="1366"/>
-                <img src="b071d690f8686abf4082a71519051a444ea71a53d1eeeff31d80f4c4d4f70629.png" title=" Efrain clicks on BOTON_INGRESA_EMAIL_CONTRASENNA" width="1366"/>
-                <img src="c1b29ce2b4d7b35e5a49afe3f7074ead56d1cfb4ea50ade46dc3c4cf0369904a.png" title=" Efrain clicks on BOTON_INGRESA_EMAIL_CONTRASENNA (completed)" width="1366"/>
-                <img src="c1b29ce2b4d7b35e5a49afe3f7074ead56d1cfb4ea50ade46dc3c4cf0369904a.png" title=" Efrain enters 'esogaviria@gmail.com' into INPUT EMAIL" width="1366"/>
-                <img src="121ae07e27585590556a0253a666285eb8daa66ac0107eb0c60147225ecf9fbe.png" title=" Efrain enters 'esogaviria@gmail.com' into INPUT EMAIL (completed)" width="1366"/>
-                <img src="b91e11d98c15a34b2adcefac947449e0c2ab9291bb79a528d2566f3296b4b847.png" title=" Efrain clicks on Campo del contrasenna" width="1366"/>
-                <img src="19018a76a8d14f7f81994e27c098184375f82bf4f74dab493f2ad28bf95a972e.png" title=" Efrain clicks on Campo del contrasenna (completed)" width="1366"/>
-                <img src="19018a76a8d14f7f81994e27c098184375f82bf4f74dab493f2ad28bf95a972e.png" title=" Efrain enters '12345Arri' into Campo del contrasenna" width="1366"/>
-                <img src="4af539e3601e889a9c1b3f893a7013747a22b1d3605cdb11115eaa7f238a1d33.png" title=" Efrain enters '12345Arri' into Campo del contrasenna (completed)" width="1366"/>
-                <img src="4af539e3601e889a9c1b3f893a7013747a22b1d3605cdb11115eaa7f238a1d33.png" title=" Efrain clicks on BOTON_ENTRAR" width="1366"/>
-                <img src="a1ced6287c16fd4675c4e10806885f9d9b0e48cb9016d7e550b76885c2f35b76.png" title=" Efrain clicks on BOTON_ENTRAR (completed)" width="1366"/>
-                <img src="a1ced6287c16fd4675c4e10806885f9d9b0e48cb9016d7e550b76885c2f35b76.png" title=" Efrain iniciar sesion (completed)" width="1366"/>
-                <img src="a1ced6287c16fd4675c4e10806885f9d9b0e48cb9016d7e550b76885c2f35b76.png" title=" Cuando iniciar sesion (completed)" width="1366"/>
-                <img src="7b65e6127e8ab1a24961678bec0a4f691f4f145733eca825a4405acbc9baeb3e.png" title=" Y escoge el producto de mayor valor" width="1366"/>
-                <img src="a7dc4c55a96c9cbff6ad0fdc15d9011f617b8c405d99285401852cebda953fbb.png" title=" Efrain escoger productos" width="1366"/>
-                <img src="a7dc4c55a96c9cbff6ad0fdc15d9011f617b8c405d99285401852cebda953fbb.png" title=" Efrain clicks on INPUTBUSCAR" width="1366"/>
-                <img src="e780f8929502de05e229017ae6d67b951cce285bbefa473b701c6e251654ed3e.png" title=" Efrain clicks on INPUTBUSCAR (completed)" width="1366"/>
-                <img src="e780f8929502de05e229017ae6d67b951cce285bbefa473b701c6e251654ed3e.png" title=" Efrain enters 'Leche entera' into INPUTBUSCAR" width="1366"/>
-                <img src="c7adc40e6873bf6b7df8c11e45060dadd7cde6f446df45ce94562573a308c49e.png" title=" Efrain enters 'Leche entera' into INPUTBUSCAR (completed)" width="1366"/>
-                <img src="c7adc40e6873bf6b7df8c11e45060dadd7cde6f446df45ce94562573a308c49e.png" title=" Efrain clicks on buscar" width="1366"/>
-                <img src="f3f65d6568b30be44f5efa64837d7b73d8e7456239b8c2a5fbdc87a52150ba3a.png" title=" Efrain clicks on buscar (completed)" width="1366"/>
-                <img src="f3f65d6568b30be44f5efa64837d7b73d8e7456239b8c2a5fbdc87a52150ba3a.png" title=" Efrain clicks on CIUDAD" width="1366"/>
-                <img src="ca3c35d3566432c249dfca311a5940f474b46a4e6efc5bfcbc45627516d02c8f.png" title=" Efrain clicks on CIUDAD (completed)" width="1366"/>
-                <img src="ca3c35d3566432c249dfca311a5940f474b46a4e6efc5bfcbc45627516d02c8f.png" title=" Efrain enters 'Medellin' into CIUDAD" width="1366"/>
-                <img src="b9da554941d542e961a2fb02695c28b80404350045dfc465ad17806a8d48f160.png" title=" Efrain enters 'Medellin' into CIUDAD (completed): <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="78a54306109c20018e0ffd82599d52dab7160cbef453a52d93d0a3879c5ec1b2.png" title=" Efrain opens the Pagina inicial (completed)" width="1366"/>
+                <img src="78a54306109c20018e0ffd82599d52dab7160cbef453a52d93d0a3879c5ec1b2.png" title=" Efrain abrir pagina inicial (completed)" width="1366"/>
+                <img src="085bcef2a185c68471b633d8778537a88ffb9702e9bb5ee600e03874e7886693.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
+                <img src="f0d7ab35a8db1403d13c3d11bc6e6acc35d12d42515cbd0110127adc1437d450.png" title=" Cuando iniciar sesion" width="1366"/>
+                <img src="f0d7ab35a8db1403d13c3d11bc6e6acc35d12d42515cbd0110127adc1437d450.png" title=" Efrain iniciar sesion" width="1366"/>
+                <img src="f0d7ab35a8db1403d13c3d11bc6e6acc35d12d42515cbd0110127adc1437d450.png" title=" Efrain clicks on BOTON PERFIL" width="1366"/>
+                <img src="c291f1445e48e741efc2f6e2a615b5d6a68050e34c6ce19bf57e6d4f1e0c973b.png" title=" Efrain clicks on BOTON PERFIL (completed)" width="1366"/>
+                <img src="c291f1445e48e741efc2f6e2a615b5d6a68050e34c6ce19bf57e6d4f1e0c973b.png" title=" Efrain clicks on BOTON_INGRESA_EMAIL_CONTRASENNA" width="1366"/>
+                <img src="3da35516e1ed371e9b145885c0f91953680ebdcd9730b708214f1121490e0ca3.png" title=" Efrain clicks on BOTON_INGRESA_EMAIL_CONTRASENNA (completed)" width="1366"/>
+                <img src="3da35516e1ed371e9b145885c0f91953680ebdcd9730b708214f1121490e0ca3.png" title=" Efrain enters 'esogaviria@gmail.com' into INPUT EMAIL" width="1366"/>
+                <img src="a84ee7090295dc0081af48049f72fffca9edb3327dc37797c1fe7fb55a807631.png" title=" Efrain enters 'esogaviria@gmail.com' into INPUT EMAIL (completed)" width="1366"/>
+                <img src="a84ee7090295dc0081af48049f72fffca9edb3327dc37797c1fe7fb55a807631.png" title=" Efrain clicks on Campo del contrasenna" width="1366"/>
+                <img src="71776420f8f5945a600e3571fa903d2b3b79efbcdbea9f2d6ab8fb8866d5ffbc.png" title=" Efrain clicks on Campo del contrasenna (completed)" width="1366"/>
+                <img src="13690da8eb2dc7d54c11059cf2963378406b6b3930855e28977c84aa9690042b.png" title=" Efrain enters '12345Arri' into Campo del contrasenna" width="1366"/>
+                <img src="3ed12d16a70b589524c8e0ec9c1b29291533c3591924a827abdbb4c54db5aa0d.png" title=" Efrain enters '12345Arri' into Campo del contrasenna (completed)" width="1366"/>
+                <img src="3ed12d16a70b589524c8e0ec9c1b29291533c3591924a827abdbb4c54db5aa0d.png" title=" Efrain clicks on BOTON_ENTRAR" width="1366"/>
+                <img src="b21321edbc11aa2b92368ac04417d7afaa35474ddf7226ea280407f018cbb8df.png" title=" Efrain clicks on BOTON_ENTRAR (completed)" width="1366"/>
+                <img src="b21321edbc11aa2b92368ac04417d7afaa35474ddf7226ea280407f018cbb8df.png" title=" Efrain iniciar sesion (completed)" width="1366"/>
+                <img src="47a08c04b9557b4b87e3c788591c3352ee87c96f80490e5f1c792f0555573875.png" title=" Cuando iniciar sesion (completed)" width="1366"/>
+                <img src="c3ee0df53aa07e4429ff445d92ecf41a9e443d245b3979c0e2bcf58679d3996d.png" title=" Y escoge el producto de mayor valor" width="1366"/>
+                <img src="c3ee0df53aa07e4429ff445d92ecf41a9e443d245b3979c0e2bcf58679d3996d.png" title=" Efrain escoger productos" width="1366"/>
+                <img src="e5da44a800a2c2565407ced8a7952733766baf6701ab40bad511fc83cb605964.png" title=" Efrain clicks on INPUTBUSCAR" width="1366"/>
+                <img src="064cbb6b10098694cf46fcdab10a4de93aa44cfcd419ebc82fa4c4e8e6389c0e.png" title=" Efrain clicks on INPUTBUSCAR (completed)" width="1366"/>
+                <img src="064cbb6b10098694cf46fcdab10a4de93aa44cfcd419ebc82fa4c4e8e6389c0e.png" title=" Efrain enters 'Leche entera' into INPUTBUSCAR" width="1366"/>
+                <img src="3b5cec8aba6700c2cc313173445b04143a04493a1e13f6712d73a910dfdedb60.png" title=" Efrain enters 'Leche entera' into INPUTBUSCAR (completed)" width="1366"/>
+                <img src="3b5cec8aba6700c2cc313173445b04143a04493a1e13f6712d73a910dfdedb60.png" title=" Efrain clicks on buscar" width="1366"/>
+                <img src="083a5dee259fe2f087c45227994a8ca3df63b79c4ab4d30d1660a462e124f2ea.png" title=" Efrain clicks on buscar (completed)" width="1366"/>
+                <img src="6369c61d1b8239d3f0635c50d19f4360dde6abdde920733b0b9d48bdd86b8d8e.png" title=" Efrain clicks on CIUDAD" width="1366"/>
+                <img src="04a4c8866dcd02e8b87a1709c9e40f12ee1e57cf26f8a83e7ad978bf5f67725f.png" title=" Efrain clicks on CIUDAD (completed)" width="1366"/>
+                <img src="04a4c8866dcd02e8b87a1709c9e40f12ee1e57cf26f8a83e7ad978bf5f67725f.png" title=" Efrain enters 'Medellin' into CIUDAD" width="1366"/>
+                <img src="abe84f39a7ab6475b10e0ab5aa3f9a55dfac7afe67fbf31fa11edc5bef9c0832.png" title=" Efrain enters 'Medellin' into CIUDAD (completed)" width="1366"/>
+                <img src="abe84f39a7ab6475b10e0ab5aa3f9a55dfac7afe67fbf31fa11edc5bef9c0832.png" title=" Efrain types 'ENTER' in CIUDAD" width="1366"/>
+                <img src="a13b5dbf1b2138dde182eb14a0022ccd9ae855d05f68282595a13f48253fd2fd.png" title=" Efrain types 'ENTER' in CIUDAD (completed)" width="1366"/>
+                <img src="e5913a22a2738ad6d41442bf9553086d837f1b2e52faa2549819e05111323813.png" title=" Efrain clicks on ALMACEN" width="1366"/>
+                <img src="0e3da7ab92f24db88ae876e8dcf44cf5d32d481cd483cce9c6f207d1d272ddf7.png" title=" Efrain clicks on ALMACEN (completed)" width="1366"/>
+                <img src="0e3da7ab92f24db88ae876e8dcf44cf5d32d481cd483cce9c6f207d1d272ddf7.png" title=" Efrain enters 'san antonio' into ALMACEN" width="1366"/>
+                <img src="53869f7912d0b1d32bac481d2fc7371997bf286691a498c6cebd74373873554a.png" title=" Efrain enters 'san antonio' into ALMACEN (completed)" width="1366"/>
+                <img src="53869f7912d0b1d32bac481d2fc7371997bf286691a498c6cebd74373873554a.png" title=" Efrain types 'ENTER' in ALMACEN" width="1366"/>
+                <img src="8a2af3d97ccb11507693fb834199fc5367338fb95f9b8df9a4f1cf24bb6ca0ed.png" title=" Efrain types 'ENTER' in ALMACEN (completed)" width="1366"/>
+                <img src="8a2af3d97ccb11507693fb834199fc5367338fb95f9b8df9a4f1cf24bb6ca0ed.png" title=" Efrain clicks on PRODUCTO1" width="1366"/>
+                <img src="a9b845b17e14316776db93385c6394fa896a452eaa78aebbc0f0bb2ae7a70bd6.png" title=" Efrain clicks on PRODUCTO1 (completed)" width="1366"/>
+                <img src="3ef5e457708d929071b970389a5ec9cf3d0c13d26cb0d01510058c6fec99e8aa.png" title=" Efrain clicks on BOTONX" width="1366"/>
+                <img src="ed4cd57a29f42083dcbed988418cf81edfb2756f19a77187ab7c0c7c5e77e93d.png" title=" Efrain clicks on BOTONX (completed)" width="1366"/>
+                <img src="ed4cd57a29f42083dcbed988418cf81edfb2756f19a77187ab7c0c7c5e77e93d.png" title=" Efrain clicks on FILTRO" width="1366"/>
+                <img src="927c638a878e53779dc1e904860e6ea851b0d8415a8e44b352f6a32bc76db407.png" title=" Efrain clicks on FILTRO (completed)" width="1366"/>
+                <img src="7bac988d15257016509d1a32966a1b61b04767fddbcea4b99bad30bc794fbc64.png" title=" Efrain clicks on MAYORPRECIO" width="1366"/>
+                <img src="14c6c7a26e0db86ec13c6460923ca8500f764ad8279dda2d82444c933df0e37b.png" title=" Efrain clicks on MAYORPRECIO (completed)" width="1366"/>
+                <img src="1ab0ef09fc4b33d2319f3f13e7fa8262c91ec3c6e6d996105552bcbfe5d2c072.png" title=" Efrain clicks on AGREGARPRODUCTO" width="1366"/>
+                <img src="d6b73cea080d7134988706d61c22b1a3bf26406f5c75afbc7a057af37abc13f0.png" title=" Efrain clicks on AGREGARPRODUCTO (completed)" width="1366"/>
+                <img src="158cd316fdcce59617b97f577e9fbba6eb18e6a4c09df5418a0e4a10a86876fd.png" title=" Efrain clicks on AGREGARCARRITO" width="1366"/>
+                <img src="3e895aad90ceda8aa5c854014635fdb50d5c8692693ac31b5a0955b9fb11d515.png" title=" Efrain clicks on AGREGARCARRITO (completed)" width="1366"/>
+                <img src="5b586ef2a12857eef353f261f4268eaeedbc8240db1172a76d683af662f9ae2a.png" title=" Efrain clicks on CARRITO" width="1366"/>
+                <img src="2f210e0ee147eff2afb7297497d930a437bcde953735e204f9480d3eba2b02c2.png" title=" Efrain clicks on CARRITO (completed)" width="1366"/>
+                <img src="2f210e0ee147eff2afb7297497d930a437bcde953735e204f9480d3eba2b02c2.png" title=" Efrain escoger productos (completed)" width="1366"/>
+                <img src="2f210e0ee147eff2afb7297497d930a437bcde953735e204f9480d3eba2b02c2.png" title=" Y escoge el producto de mayor valor (completed)" width="1366"/>
+                <img src="2f210e0ee147eff2afb7297497d930a437bcde953735e204f9480d3eba2b02c2.png" title=" Entonces se ve un mensaje finaizar compra" width="1366"/>
+                <img src="2f210e0ee147eff2afb7297497d930a437bcde953735e204f9480d3eba2b02c2.png" title=" Efrain hacer pago" width="1366"/>
+                <img src="d3cf30773ac8fa4f109096c78bae95cc0f90079272659d7dda7d5c43422045d7.png" title=" Efrain clicks on BOTONIRAPAGAR: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

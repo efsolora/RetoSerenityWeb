@@ -1,38 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Inicio de sesion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-30T21:44:07" hostname="LAPTOP-7C2GORMF" time="36.558">
+<testsuite name="Inicio de sesion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-02T03:19:32" hostname="LAPTOP-7C2GORMF" time="124.414">
   <properties/>
-  <testcase name="Compra exitosa" classname="Inicio de sesion" time="36.558">
-    <failure message="org.opentest4j.AssertionFailedError" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:35)
-	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:98)
-	at app//com.sofkau.stepdefinitions.InicioSesionStepDefinitions.escoge_el_producto_de_mayor_valor(InicioSesionStepDefinitions.java:67)
-	at ✽.escoge el producto de mayor valor(file:///C:/Users/rolin/Sofka%20U/RetoSerenityWeb/QA-Reto-Serenity-Web/src/test/resources/features/iniciosesion.feature:16)
+  <testcase name="Compra exitosa" classname="Inicio de sesion" time="124.414">
+    <failure message="java.lang.AssertionError: Expected enabled element was not clickable" type="java.lang.AssertionError">java.lang.AssertionError: Expected enabled element was not clickable
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady.performAs(WaitUntilTargetIsReady.java:27)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$fPYUi6cv.performAs$accessor$OiYeiZTc(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:385)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$fPYUi6cv.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:209)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.sofkau.tasks.HacerPago.performAs(HacerPago.java:19)
+	at com.sofkau.tasks.HacerPago$ByteBuddy$H98PJenF.performAs$accessor$NPdR8rVs(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.sofkau.tasks.HacerPago$ByteBuddy$H98PJenF.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at com.sofkau.stepdefinitions.InicioSesionStepDefinitions.se_ve_un_mensaje_finaizar_compra(InicioSesionStepDefinitions.java:77)
+	at ✽.se ve un mensaje finaizar compra(file:///C:/Users/rolin/Sofka%20U/RetoSerenityWeb/QA-Reto-Serenity-Web/src/test/resources/features/iniciosesion.feature:17)
 </failure>
   </testcase>
-  <system-out><![CDATA[2023-03-30 16:44:19 INFO  InicioSesionStepDefinitions:31 INICIA LA AUTOMATIZACION
-2023-03-30 16:44:29 INFO  InicioSesionStepDefinitions:46 Realiza la peticion
-2023-03-30 16:44:42 INFO  InicioSesionStepDefinitions:65  fallo al momento de realizar la peticion
-2023-03-30 16:44:42 WARN  InicioSesionStepDefinitions:66 element not interactable
-  (Session info: chrome=111.0.5563.147)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-7C2GORMF', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rolin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5644}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5cf153a5c50ca3980d36a73e8ad6885b
+  <system-out><![CDATA[2023-04-01 22:19:44 INFO  InicioSesionStepDefinitions:29 INICIA LA AUTOMATIZACION
+2023-04-01 22:19:53 INFO  InicioSesionStepDefinitions:45 Realiza la peticion
+2023-04-01 22:20:32 INFO  InicioSesionStepDefinitions:63 Realiza la peticion
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 45604
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 2304
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 30, 2023 4:44:10 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 10:19:35 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-mar. 30, 2023 4:44:10 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+abr. 01, 2023 10:19:35 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 24586
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 37800
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar. 30, 2023 4:44:13 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 10:19:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -8,13 +8,11 @@ import io.cucumber.java.es.Entonces;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
-import static com.sofkau.questions.MensajeNombre.mensajeNombre;
+import static com.sofkau.questions.MensajeConfirmacion.mensajeConfirmacion;
 import static com.sofkau.tasks.AbrirPaginaInicial.abrirPaginaInicial;
 import static com.sofkau.tasks.EscogerProductos.escogerProductos;
+import static com.sofkau.tasks.HacerPago.hacerPago;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
-import static com.sofkau.tasks.LlenarRegistro.llenarRegistro;
-import static com.sofkau.tasks.LlenarRegistro.nombreUsuario;
-import static com.sofkau.tasks.NavegarAlRegistro.navegarAlRegistro;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -33,6 +31,7 @@ public class InicioSesionStepDefinitions extends Configuracion {
             LOGGER.info(" fallo la configuracion inicial");
             LOGGER.warn(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
     }
@@ -48,6 +47,7 @@ public class InicioSesionStepDefinitions extends Configuracion {
             LOGGER.info(" fallo al momento de realizar la peticion");
             LOGGER.warn(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
     }
@@ -65,6 +65,7 @@ public class InicioSesionStepDefinitions extends Configuracion {
             LOGGER.info(" fallo al momento de realizar la peticion");
             LOGGER.warn(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
 
@@ -72,7 +73,19 @@ public class InicioSesionStepDefinitions extends Configuracion {
 
     @Entonces("se ve un mensaje finaizar compra")
     public void se_ve_un_mensaje_finaizar_compra() {
-
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    hacerPago()
+            );
+            theActorInTheSpotlight().should(
+                    seeThat(mensajeConfirmacion(), equalTo("Pedido recibido")));
+            LOGGER.info("Realiza la peticion");
+        } catch (Exception e) {
+            LOGGER.info(" fallo al momento de realizar la peticion");
+            LOGGER.warn(e.getMessage());
+            Assertions.fail();
+            quitarDriver();
+        }
     }
 
 }

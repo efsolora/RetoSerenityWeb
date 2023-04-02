@@ -6,7 +6,6 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 import static com.sofkau.ui.PaginaInicial.*;
-import static com.sofkau.ui.PaginaRegistro.*;
 
 public class IniciarSesion implements Task {
 
